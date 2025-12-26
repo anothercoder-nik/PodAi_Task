@@ -1,0 +1,247 @@
+@media (max-width: 64rem) {
+
+    .navbar {
+        padding: 1.5rem 5%;
+    }
+
+    .video-section {
+        height: auto;
+        min-height: 40rem;
+        padding: 4rem 0;
+    }
+
+    .video-inner-container {
+        width: 100%;
+        height: auto;
+        padding: 0 5%;
+    }
+
+    .video-wrapper {
+        width: 90%;
+        height: auto;
+        aspect-ratio: 16/9;
+    }
+
+    .kitchen-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* =========================================
+   Responsive Design Styles
+   ========================================= */
+
+/* Tablet & Mobile Breakpoint (max-width: 48rem / 768px) */
+@media (max-width: 48rem) {
+
+    /* Changes layout to Grid for better control on mobile */
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        /* Logo on left, Toggle button on right */
+        padding: 1.5rem 1rem;
+        height: auto;
+        gap: 0;
+        align-items: center;
+    }
+
+    /* Show the Mobile Menu Toggle Button */
+    .mobile-menu-btn {
+        display: block;
+        justify-self: end;
+    }
+
+    /* Hide Desktop Menu Links and Icons by default */
+    .nav-links,
+    .nav-icons {
+        display: none;
+    }
+
+    /* Active State for Mobile Menu (When toggled open) */
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed;
+        /* Fixed to cover the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 2000;
+        gap: 2rem;
+    }
+
+    /* Position the toggle button inside the open menu */
+    .navbar.active .mobile-menu-btn {
+        position: absolute;
+        top: 1.5rem;
+        right: 1.5rem;
+    }
+
+    /* Show Links in a vertical column */
+    .navbar.active .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        text-align: center;
+        order: 2;
+        font-size: 1.5rem;
+    }
+
+    /* Show Icons below links */
+    .navbar.active .nav-icons {
+        display: flex;
+        order: 3;
+        margin-top: 1rem;
+    }
+
+    /* Adjust Logo position in open menu */
+    .logo {
+        justify-self: start;
+    }
+
+    .navbar.active .logo {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: 2rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 2rem;
+        min-height: auto;
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        padding: 0 1rem 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-search {
+        margin: 0 auto;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 25rem;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .home-kitchen {
+        padding: 3rem 5% 1rem;
+    }
+
+    .kitchen-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .popular-items {
+        padding: 3rem 5% 0;
+    }
+
+    .carousel-slide {
+        min-width: 18rem;
+    }
+
+    .carousel-track {
+        gap: 1rem;
+        padding: 1rem 0.5rem;
+    }
+
+    .video-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .video-wrapper {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .contact-section {
+        flex-direction: column;
+        height: auto;
+        padding: 4rem 5%;
+        gap: 3rem;
+    }
+
+    .contact-form {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact-form button {
+        align-self: center;
+    }
+
+    .contact-image {
+        display: block;
+        width: 100%;
+        max-width: 25rem;
+        margin: 0 auto;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    footer {
+        height: auto;
+        padding: 3rem 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 0 5%;
+        text-align: center;
+        gap: 2rem;
+        border-bottom: none;
+    }
+
+    .footer-logo {
+        justify-self: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 1.25rem;
+        justify-self: center;
+    }
+
+    .footer-social {
+        justify-self: center;
+    }
+}
+
+@media (max-width: 30rem) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-slide {
+        min-width: 85vw;
+    }
+
+    .popular-items h2 {
+        font-size: 2rem;
+    }
+
+    .request-dish-btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}

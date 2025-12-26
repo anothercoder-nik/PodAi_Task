@@ -1,0 +1,104 @@
+/* =========================================
+   Navbar Styles
+   ========================================= */
+
+/* Main Navbar Container */
+.navbar {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    /* Logo - Links - Icons */
+    align-items: center;
+    padding: 1.8rem 5rem;
+    background-color: var(--primary-green);
+    color: white;
+    position: relative;
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Logo Styling */
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.02em;
+}
+
+/* Navigation Links List */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 3.5rem;
+    /* Space between links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    opacity: 0.7;
+    /* Make inactive links slightly transparent */
+    transition: opacity 0.3s ease;
+}
+
+/* Highlight for Active Page */
+.nav-links a.active {
+    opacity: 1;
+    /* Fully visible */
+}
+
+/* Icons Container (Search & Cart) */
+.nav-icons {
+    display: flex;
+    gap: 1.5625rem;
+    align-items: center;
+    justify-self: end;
+}
+
+/* Common Icon Button Style */
+.icon-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Cart Badge (Notification Bubble) */
+.cart-badge {
+    position: absolute;
+    top: -0.3125rem;
+    right: -0.5rem;
+    background: var(--accent-yellow);
+    color: var(--text-dark);
+    font-size: 0.75rem;
+    width: 1.125rem;
+    height: 1.125rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile Menu Button (Hidden on Desktop) */
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.mobile-menu-btn svg {
+    width: 2rem;
+    height: 2rem;
+}

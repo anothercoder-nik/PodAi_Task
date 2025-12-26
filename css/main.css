@@ -1,0 +1,16 @@
+@import url('base/variables.css');
+@import url('base/reset.css');
+
+@import url('components/navbar.css');
+@import url('components/cards.css');
+@import url('components/carousel.css');
+@import url('components/modal.css');
+
+@import url('sections/hero.css');
+@import url('sections/kitchen.css');
+@import url('sections/popular.css');
+@import url('sections/video.css');
+@import url('sections/contact.css');
+@import url('sections/footer.css');
+
+@import url('responsive.css');

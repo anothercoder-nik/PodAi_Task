@@ -1,0 +1,51 @@
+.kitchen-popular-wrapper {
+    width: 100%;
+    height: auto;
+    background-color: #F7F8FA;
+    overflow: hidden;
+}
+
+.home-kitchen {
+    padding: 6.25rem max(5%, calc((100% - 75rem) / 2)) 1.25rem;
+    background-color: transparent;
+}
+
+.home-kitchen h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    max-width: 73.75rem;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.kitchen-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+    max-width: 73.75rem;
+    width: 100%;
+    margin: 0 auto;
+    min-height: 66.75rem;
+}
+
+@media (max-width: 75rem) {
+    .kitchen-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 56.25rem) {
+    .kitchen-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 37.5rem) {
+    .kitchen-grid {
+        grid-template-columns: 1fr;
+    }
+}

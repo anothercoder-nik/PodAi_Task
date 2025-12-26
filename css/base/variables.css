@@ -1,0 +1,12 @@
+:root {
+    --primary-green: #1AC073;
+    --secondary-green: #2EBF91;
+    --accent-yellow: #F3BA00;
+    --text-dark: #1F1F1F;
+    --text-white: #FFFFFF;
+    --bg-light: #F0FAF7;
+    --card-bg: #FFFFFF;
+    --footer-bg: #1AC073;
+    --font-primary: 'Poppins', sans-serif;
+    --transition: all 0.3s ease;
+}

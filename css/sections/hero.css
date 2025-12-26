@@ -1,0 +1,77 @@
+.hero {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 2.5rem max(5%, calc((100% - 75rem) / 2)) 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 37.5rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 34.375rem;
+    padding-bottom: 3.75rem;
+    padding-left: 0;
+}
+
+.hero-content h1 {
+    font-size: 3.8rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 1.25rem;
+}
+
+.hero-content p {
+    font-size: 1.05rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+    line-height: 1.6;
+    max-width: 95%;
+}
+
+.hero-search {
+    background: white;
+    padding: 0;
+    border-radius: 0.5rem;
+    display: flex;
+    width: 100%;
+    max-width: 27.5rem;
+    overflow: hidden;
+    box-shadow: 0 0.625rem 1.5625rem rgba(0, 0, 0, 0.08);
+}
+
+.hero-search input {
+    flex: 1;
+    border: none;
+    padding: 1.125rem 1.375rem;
+    font-size: 1rem;
+    outline: none;
+    color: #666;
+}
+
+.hero-search button {
+    background-color: var(--accent-yellow);
+    color: white;
+    border: none;
+    padding: 0 2.5rem;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 100%;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}

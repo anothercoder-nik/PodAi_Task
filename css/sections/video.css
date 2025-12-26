@@ -1,0 +1,127 @@
+.video-section {
+    height: 53.75rem;
+    width: 100%;
+    background: linear-gradient(to bottom, #fff 32.25rem, #C7EACC 32.25rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.video-inner-container {
+    width: 65.625rem;
+    height: 51rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    gap: 3rem;
+}
+
+.video-content {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.video-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+    color: var(--text-dark);
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.video-content p {
+    color: #666;
+    margin-bottom: 0;
+    font-size: 1.1rem;
+    max-width: 37.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 54.8125rem;
+    height: 27.625rem;
+    max-width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.play-overlay {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.play-overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.play-btn {
+    width: 5rem;
+    height: 5rem;
+    background: #00C853;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0.25rem 0.9375rem rgba(0, 200, 83, 0.4);
+    transition: transform 0.2s;
+}
+
+.play-btn:hover {
+    transform: scale(1.1);
+}
+
+.play-btn::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 0.75rem solid transparent;
+    border-bottom: 0.75rem solid transparent;
+    border-left: 1.25rem solid white;
+    margin-left: 0.375rem;
+}
